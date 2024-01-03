@@ -13,15 +13,9 @@ import java.util.Date;
 @Entity
 @Table(name="TRANSACTION_LOG")
 public class TransactionLogEntity extends BaseEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "ID")
-    private Long id;
 
-    @Column(name = "AMOUNT")
     private Long amount;
 
-    @Column(name = "DATE_ID")
     private Date dateId;
 
     @ManyToOne(fetch = FetchType.LAZY)

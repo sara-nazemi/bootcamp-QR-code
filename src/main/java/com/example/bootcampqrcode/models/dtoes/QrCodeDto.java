@@ -10,10 +10,8 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class QrCodeDto extends BaseDto{
-    private Long id;
+public class QrCodeDto{
+
     private Long walletId;
-    private Date createDate;
-    private Boolean status;
-    private Long usageCount;
+    private String phoneNumber;
 }

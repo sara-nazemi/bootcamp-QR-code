@@ -14,7 +14,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class TransactionLogDto extends BaseDto{
+public class TransactionLogDto {
     private Long id;
     private Long amount;
     private Date dateId;

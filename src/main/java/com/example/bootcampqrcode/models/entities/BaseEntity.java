@@ -15,7 +15,10 @@ import java.util.Date;
 @ToString
 public abstract class BaseEntity {
     private static final long serialVersionUID = 1234567L;
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "ID")
+    private Long id;
     @CreatedDate
     @Column(updatable = false)
     private Date insertDate;

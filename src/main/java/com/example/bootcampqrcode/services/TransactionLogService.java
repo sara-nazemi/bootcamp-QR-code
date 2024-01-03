@@ -1,6 +1,9 @@
 package com.example.bootcampqrcode.services;
 
 import com.example.bootcampqrcode.models.entities.TransactionLogEntity;
+import com.example.bootcampqrcode.repositories.TransactionLogRepository;
+import org.springframework.stereotype.Service;
 
-public interface TransactionLogService extends BaseService<TransactionLogEntity,Long>{
+@Service
+public class TransactionLogService extends BaseServiceImpl<TransactionLogEntity, TransactionLogRepository> {
 }
